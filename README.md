@@ -27,8 +27,9 @@ Serving the HTML pages.
 Testing the webserver
 
 ## PROGRAM:
+```
 from http.server import HTTPServer,BaseHTTPRequestHandler
-content= '''
+content= 
 <!doctype html>
 <html>
 <head>
@@ -43,7 +44,7 @@ content= '''
 <h2>5. MERN stack</h2>
 </body>
 </html>
-'''
+
 class MyServer(BaseHTTPRequestHandler):
     def do_GET(self):
         print("Get request received...")
@@ -56,10 +57,17 @@ print("This is my webserver")
 server_address =('',8000)
 httpd = HTTPServer(server_address,MyServer)
 httpd.serve_forever()
+```
 
 ## OUTPUT:
-![Serveroutput](Server output.png)
-![Clientoutput](<Client output.png>)
+Server Output
+
+![image](https://github.com/musfiramahjabeen/webserver/assets/138971008/ee40934e-0c45-4c81-9fb0-4db6f776e081)
+
+Client Output
+![image](https://github.com/musfiramahjabeen/webserver/assets/138971008/c9bc7719-72b7-42f2-ad58-81fb47ae6476)
+
+
 
 ## RESULT:
 The program is executed succesfully
