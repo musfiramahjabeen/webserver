@@ -60,7 +60,6 @@ server_address =('',8000)
 httpd = HTTPServer(server_address,MyServer)
 httpd.serve_forever()
 ```
-
 ## OUTPUT:
 ### Server Output
 ![image](https://github.com/SaravananPV3010/webserver/assets/139754526/3f74cf44-020f-4aaa-b4dc-bec3ee9a0d85)
